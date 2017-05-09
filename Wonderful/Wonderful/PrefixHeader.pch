@@ -1,0 +1,56 @@
+//
+//  PrefixHeader.pch
+//  Wonderful
+//
+//  Created by laouhn on 15/12/16.
+//  Copyright © 2015年 laouhn. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
+
+#import "DCPathButton.h"
+#import "DBSphereView.h"
+#import "DOUAudioStreamer.h"
+#import "MeiWenViewController.h"
+#import "MeiTuViewController.h"
+#import "MeiShengViewController.h"
+#import "SaoMiaoViewController.h"
+#import "SheZhiViewController.h"
+#import "CollectionViewController.h"
+#import <CoreData/CoreData.h>
+#import "AppDelegate.h"
+#import "AFNetworking.h"
+#import "SVProgressHUD.h"
+#import "DWBubbleMenuButton.h"
+#import "UIImageView+WebCache.h"
+#import "MeiWenModel.h"
+#import "MeiShengModel.h"
+#import "MeiTuModel.h"
+#import "MeiWenTableViewCell.h"
+#import "MeiShengCollectionViewCell.h"
+#import "MeiWen.h"
+#import "MeiSheng.h"
+#import "MeiTu.h"
+
+#define kGetContext ((AppDelegate *)[UIApplication sharedApplication].delegate).managedObjectContext
+#define kGetAppDelegate (AppDelegate *)[UIApplication sharedApplication].delegate
+
+#define kButtonWidthAndHeight 50
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+
+#define kMainUrl1 @"http://115.29.46.92/updateArticleList?"
+#define kMainUrl2 @"http://115.29.46.92/getArticleContent?"
+#define kRead1 @"uid=0&type=%@&maxId=0&which=1"
+#define kRead2 @"uid=0&which=1&aid=%@"
+#define kListen12 @"uid=0&type=%@&maxId=0&which=2"
+#define kSee1 @"uid=0&type=%@&maxId=0&which=3"
+#define kSee2 @"uid=0&which=3&aid=%@"
+
